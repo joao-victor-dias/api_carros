@@ -18,3 +18,6 @@ Configuração API:
 - criar arquivo variaveis.env => armazenar variaveis do sistema(ex.: porta, string de conexão com banco de dados, usuário, senha ... );
 - criar arquivo server.js em src;
 - configurar script "start" para abrir nodemon e arquivo server.js;
+
+
+
