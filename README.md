@@ -1,26 +1,22 @@
-Ambiente de desenvolvimento: NodeJS, NPM e MySQL
+# API-Carros
+A API tem como funções ler, adicionar, editar e deletar dados de carros no banco de dados.
 
-express => framework que facilita o desenvolvimento de aplicações backend, possuindo um conjunto de templates para aplicações full-stack;
+## Tecnologias Utilizadas
+<div>
+	<img align="center" height="90" width="110" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
+	<img align="center" height="90" width="110" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+	<img align="center" height="90" width="110" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg" />
 
-dotenv => possibilita a leitura do arquivo .env;
+</div>
 
-cors => especificação da w3c para trabalhar com API. Permite acessos de outros sites, mesmo estando em domínios diferentes;
+## Dependências
+- **express:** framework que facilita o desenvolvimento de aplicações backend, possuindo um conjunto de templates para aplicações full-stack;
+- **dotenv:** possibilita a leitura do arquivo .env;
+- **cors:** especificação da W3C para trabalhar com API. Permite acessos de outros sites, mesmo estando em domínios diferentes;
+- **body-parser:** módulo capaz de converter o body da requisição em outros formatos;
+- **nodemon (desenvolvimento) :** biblioteca que ajuda no desenvolvimento de sistemas com NodeJS reiniciando automaticamente o servidor quando ocorre alterações.
 
-body-parser => Modulo capaz de converter o body da requisição em outros formatos;
-
-
-
-Configuração API:
-- npm init -y | yarn init -y;
-- npm install express mysql dotenv cors body-parser | yarn add express mysql dotenv cors body-parser;
-- npm install nodemon --save-dev | yarn add nodemon -D;
-- criar pasta src;
-- criar arquivo variaveis.env => armazenar variaveis do sistema(ex.: porta, string de conexão com banco de dados, usuário, senha ... );
-- criar arquivo server.js em src;
-- configurar script "start" para abrir nodemon e arquivo server.js;
-
-
-Script criação banco de dados no mysql
+## Query de criação do banco de dados no MySQL
 
 ```sql
 create database dbApiCarros;
@@ -31,4 +27,5 @@ create table carros (
 	placa varchar(7)
 );
 ```
+
 
