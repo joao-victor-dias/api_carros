@@ -20,4 +20,15 @@ Configuração API:
 - configurar script "start" para abrir nodemon e arquivo server.js;
 
 
+Script criação banco de dados no mysql
+
+```sql
+create database dbApiCarros;
+use dbApiCarros;
+create table carros (
+	codigo int primary key auto_increment,
+	modelo varchar(30),
+	placa varchar(7)
+);
+```
 
